@@ -1,17 +1,51 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>From where do you want get your Portfolio?</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <!--  <div class="ion-canvas">
+      <canvas #canvas></canvas>
+    </div>
+    <button
+      ion-button
+      color="primary"
+      (click)="drawCircle()">
+      Bouncing ball
+   </button>
+
+
+
+   <button
+      ion-button
+      color="primary"
+      (click)="drawSquare()">
+      Draw a Square
+   </button>
+
+
+
+   <button
+      ion-button
+      color="primary"
+      (click)="drawTriangle()">
+      Draw a Triangle
+   </button> -->
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+           <img [src]="imgurlOnliner">
+        </ion-thumbnail>
+        <h2>Onliner</h2>
+        <button [navPush]="info" ion-button clear item-end>View</button>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img id="instagram" src="img/homer-tm.jpg">
+        </ion-thumbnail>
+        <h2>Instagram</h2>
+        <button [navPush]="info" ion-button clear item-end>View</button>
+      </ion-item>
+    </ion-list>
 </ion-content>

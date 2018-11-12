@@ -1,3 +1,20 @@
 page-home {
+    $color-white: #ffffff;
+    $color-black: #000000;
+
+    .toolbar-background-md {
+        border-color: #fafafa;
+        background: #020005;
+    }
+
+    .toolbar-title,
+    h2 {
+        color: $color-white;
+    }
+
+    .content,
+    .item {
+        background: $color-black;
+    }
 
 }
